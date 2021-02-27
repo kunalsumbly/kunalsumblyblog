@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geolocation on Kunal Sumbly</title>
+    <link>/tags/geolocation/</link>
+    <description>Recent content in Geolocation on Kunal Sumbly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kunal.sumbly@gmail.com (Kunal Sumbly)</managingEditor>
+    <webMaster>kunal.sumbly@gmail.com (Kunal Sumbly)</webMaster>
+    <copyright>(c) 2021 Kunal Sumbly.</copyright>
+    <lastBuildDate>Thu, 12 Nov 2015 10:31:44 -0400</lastBuildDate><atom:link href="/tags/geolocation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Geolocation on Page Load</title>
+      <link>/post/geolocation-on-page-load/</link>
+      <pubDate>Thu, 12 Nov 2015 10:31:44 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/geolocation-on-page-load/</guid>
+      <description>While building Geotinerary, I wanted the map to zoom relatively close to the users location. Surprisingly enough, this was quite hard to find an example of.
+HTML5 and IPs Traditionally, when a webpage wants your location, we use the native HTML5. While this isn&amp;rsquo;t a terrible idea and can have much more accurate results, there is another method to find your users location that doesn&amp;rsquo;t require the use of HTML5 geolocation, the users IP address.</description>
+    </item>
+    
+  </channel>
+</rss>

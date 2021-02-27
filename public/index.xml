@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kunal Sumbly</title>
+    <link>/</link>
+    <description>Recent content on Kunal Sumbly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kunal.sumbly@gmail.com (Kunal Sumbly)</managingEditor>
+    <webMaster>kunal.sumbly@gmail.com (Kunal Sumbly)</webMaster>
+    <copyright>(c) 2021 Kunal Sumbly.</copyright>
+    <lastBuildDate>Tue, 14 Mar 2017 09:26:55 -0400</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Tue, 14 Mar 2017 09:26:55 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/about/</guid>
+      <description>Hi, I&amp;rsquo;m Kunal Sumbly.
+Senior Software Engineer with 11+ years in banking and financial services industry. Experienced in implementing Enterprise Software Products. Customer-centric with expertise in customer-facing roles, working closely with clients from the inception of the project, through high-level and detailed design/implementation to launch and post-go-live support.
+Passionate about technology, proficient in different technical stacks in the Java Ecosystem, Cloud Computing , AWS and DevOps.
+Follow me on Github and Twitter.</description>
+    </item>
+    
+    <item>
+      <title>CLI Testing in Go</title>
+      <link>/post/cli-testing-golang/</link>
+      <pubDate>Tue, 18 Oct 2016 08:19:39 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/cli-testing-golang/</guid>
+      <description>Writing unit tests for Go (Golang) CLIs A majority of my background has been developing web applications. I&amp;rsquo;ve recently changed teams at work to a team that is primarily focused on building a CLI.
+Writing tests in Go is a relatively simple process, especially coming from JavaScript where you need multiple modules, and lots of code before you even begin writing tests.
+The testing package has most everything you need for writing unit tests.</description>
+    </item>
+    
+    <item>
+      <title>Bestrida</title>
+      <link>/post/bestrida/</link>
+      <pubDate>Sun, 04 Sep 2016 09:45:50 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/bestrida/</guid>
+      <description>I recently published Bestrida to the iOS app store for my submission to the 2016 Strava Developer Challenge. Here is a brief overview of the application. Strava.com is a popular and widely used website and mobile app that over one million cyclists and runners use to track their activity via GPS. Whenever you go for a run or ride your bike, Strava will track and store your activity and provide you with useful statistics.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HyperTerm on Kunal Sumbly</title>
+    <link>/tags/hyperterm/</link>
+    <description>Recent content in HyperTerm on Kunal Sumbly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kunal.sumbly@gmail.com (Kunal Sumbly)</managingEditor>
+    <webMaster>kunal.sumbly@gmail.com (Kunal Sumbly)</webMaster>
+    <copyright>(c) 2021 Kunal Sumbly.</copyright>
+    <lastBuildDate>Sat, 23 Jul 2016 20:12:34 -0400</lastBuildDate><atom:link href="/tags/hyperterm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switching from iTerm to Hyper Terminal</title>
+      <link>/post/switching-from-iterm-to-hyperterm/</link>
+      <pubDate>Sat, 23 Jul 2016 20:12:34 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/switching-from-iterm-to-hyperterm/</guid>
+      <description>Recently zeit.co released to the world a wonderful terminal built with JavaScript / HTML / CSS called Hyper. Even better yet, this terminal is fully customizable with open source plugins.
+I&amp;rsquo;m not one to change my development environment constantly, but this electron app was simple to install on OSX and even easier to customize programmatically.
+My hope is to demo how simple it is to get started with Hyper terminal, and show how I only added a few lines to the configuration file to have a terminal I enjoy to use.</description>
+    </item>
+    
+  </channel>
+</rss>

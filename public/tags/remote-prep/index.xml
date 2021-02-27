@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Remote Prep on Kunal Sumbly</title>
+    <link>/tags/remote-prep/</link>
+    <description>Recent content in Remote Prep on Kunal Sumbly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kunal.sumbly@gmail.com (Kunal Sumbly)</managingEditor>
+    <webMaster>kunal.sumbly@gmail.com (Kunal Sumbly)</webMaster>
+    <copyright>(c) 2021 Kunal Sumbly.</copyright>
+    <lastBuildDate>Mon, 10 Aug 2015 07:48:39 -0400</lastBuildDate><atom:link href="/tags/remote-prep/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hack Reactor Remote Prep Week 4</title>
+      <link>/post/hack-reactor-remote-prep-week-4/</link>
+      <pubDate>Mon, 10 Aug 2015 07:48:39 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-remote-prep-week-4/</guid>
+      <description>Just like that, the four week course is at an end. I have really enjoyed the opportunity to learn such a large amount of material in such a short time.
+This has definitely been a great learning experience for me. If you are considering going to Hack Reactor, then this course will really show you what you&amp;rsquo;re getting in to. Also, if you are wondering if you can learn in the Hack Reactor Remote online class, the answer is yes!</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Remote Prep Week 3</title>
+      <link>/post/hack-reactor-remote-prep-week-3/</link>
+      <pubDate>Sun, 02 Aug 2015 07:43:11 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-remote-prep-week-3/</guid>
+      <description>I cannot believe we have already completed 3 weeks of class! I have learned a considerable amount along the way. Here are some of the topics that were covered this week.
+Functions Now we are getting into the good stuff. Functions are one of the most critical tools for any good JavaScript programmer. We discussed creating functions, invoking functions, and storing functions as variables.
+Events Event handlers are specific types of functions that are invoked when the user interacts with the website.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Remote Prep Week 2</title>
+      <link>/post/hack-reactor-remote-prep-week-2/</link>
+      <pubDate>Sat, 25 Jul 2015 09:42:11 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-remote-prep-week-2/</guid>
+      <description>Another week completed already! With the end of week 2 brings the close to the first half of the class. At the end of each class, the instructors give a survey to determine if you feel &amp;lsquo;behind pace,&amp;rsquo; &amp;lsquo;on pace,&amp;rsquo; or &amp;lsquo;ahead of pace.&amp;rsquo; While I still feel I am in the &amp;lsquo;ahead of pace&amp;rsquo; category, I have been learning quite a bit!
+Introduction to JavaScript One of the cool things about Hack Reactor is that, no matter the complexity of the material, they always find a way to challenge you with the exercises.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Remote Prep Week 1</title>
+      <link>/post/hack-reactor-remote-prep-week-1/</link>
+      <pubDate>Sun, 19 Jul 2015 20:42:20 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-remote-prep-week-1/</guid>
+      <description>I am fortunate enough to be in the first Hack Reactor Remote Prep class! The course is 4 weeks long, meeting 5 days a week for 3 hours.
+The class time has flown by, and I have been able to work and get to know a majority of my classmates! I had wondered what it would be like to pair program remotely with people, and I honestly think it is just as good as if the person was sitting beside you.</description>
+    </item>
+    
+  </channel>
+</rss>

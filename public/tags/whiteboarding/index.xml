@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Whiteboarding on Kunal Sumbly</title>
+    <link>/tags/whiteboarding/</link>
+    <description>Recent content in Whiteboarding on Kunal Sumbly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kunal.sumbly@gmail.com (Kunal Sumbly)</managingEditor>
+    <webMaster>kunal.sumbly@gmail.com (Kunal Sumbly)</webMaster>
+    <copyright>(c) 2021 Kunal Sumbly.</copyright>
+    <lastBuildDate>Sun, 13 Dec 2015 10:37:06 -0400</lastBuildDate><atom:link href="/tags/whiteboarding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Whiteboarding: Triggers</title>
+      <link>/post/on-whiteboarding-triggers/</link>
+      <pubDate>Sun, 13 Dec 2015 10:37:06 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/on-whiteboarding-triggers/</guid>
+      <description>I will be the first to admit, I struggle in whiteboarding situations, especially in the context of technical interviewing when triggers arise. I hope this post helps you become better at whiteboarding when these certain triggers occur.
+I have recognized that there are two types of triggers that happen while whiteboarding. The first trigger is an interpersonal trigger that I will call a &amp;ldquo;spiraling&amp;rdquo; trigger. The next is an external trigger that I will call a &amp;ldquo;questioning&amp;rdquo; trigger.</description>
+    </item>
+    
+  </channel>
+</rss>

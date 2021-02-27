@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hack Reactor on Kunal Sumbly</title>
+    <link>/tags/hack-reactor/</link>
+    <description>Recent content in Hack Reactor on Kunal Sumbly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kunal.sumbly@gmail.com (Kunal Sumbly)</managingEditor>
+    <webMaster>kunal.sumbly@gmail.com (Kunal Sumbly)</webMaster>
+    <copyright>(c) 2021 Kunal Sumbly.</copyright>
+    <lastBuildDate>Sun, 10 Jan 2016 10:05:17 -0400</lastBuildDate><atom:link href="/tags/hack-reactor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hack Reactor Week 12</title>
+      <link>/post/hack-reactor-week-12/</link>
+      <pubDate>Sun, 10 Jan 2016 10:05:17 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-week-12/</guid>
+      <description>The realization that Week 12 has finally come to an end is definitely bitter-sweet. I have spent over 11 hours a day for the past 12 weeks learning Full-Stack Software Engineering. While I am looking forward getting back to a regular sleep schedule, I have learned more than I could imagine, and met many amazing people along the way.
+Week 12 consisted of finalizing resumes, creating cover letters, and preparing for the job search ahead.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Week 11</title>
+      <link>/post/hack-reactor-week-11/</link>
+      <pubDate>Sun, 03 Jan 2016 08:27:56 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-week-11/</guid>
+      <description>With our product, Bestrida, to MVP (Minimum Viable Product) we will continue to improve our MVP features, as well as the look and feel of product, for the remainder of the week.
+Design Our product finally received a much needed design overhaul, and we are definitely happy with the result:
+Stretch Goals As you can see in the above image, we are able to pull from the Strava API segment effort data for the user to view additional metrics on how well they performed during their effort.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Week 10</title>
+      <link>/post/hack-reactor-week-10/</link>
+      <pubDate>Sun, 20 Dec 2015 20:42:22 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-week-10/</guid>
+      <description>With Thesis moving along very nicely, here is what happened in week 10!
+Authentication One of the challenges faced this week during thesis is removing API keys from the client side. With a mobile application, you should consider all of your code accessible for the world to see. This would allow for any user to view your API&amp;rsquo;s secret key allowing other user&amp;rsquo;s to make (potentially) malicious requests to the API.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Week 9</title>
+      <link>/post/hack-reactor-week-09/</link>
+      <pubDate>Sun, 13 Dec 2015 09:50:22 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-week-09/</guid>
+      <description>Week 9 is finished at Hack Reactor, and thesis projects are in full swing! While there aren&amp;rsquo;t many things on the schedule, thesis is all about trying to build the best product in the 3 short weeks you have dedicated to it.
+Thesis To start, this is a perfect summary of life during thesis:
+Have no fear, little buddy.
+While building a product can feel this way sometimes, I am having an awesome time learning and problem solving to create the best app we can possibly produce.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Week 8</title>
+      <link>/post/hack-reactor-week-08/</link>
+      <pubDate>Sun, 06 Dec 2015 09:13:49 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-week-08/</guid>
+      <description>Legacy Project After the greenfield project last week, the next exercise was picking another group&amp;rsquo;s greenfield project to build upon.
+The idea of this exercise is actually well founded, the majority of Software Engineers are going to work on developing new features or debugging &amp;lsquo;legacy&amp;rsquo; code, or known as code you haven&amp;rsquo;t seen before.
+I really enjoyed working on Seamless, the greenfield project my group decided to take on. The foundation of seamless was solid, it was a basic vanilla JavaScript application, that resized an image using a seam-carving algorithm.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Week 7</title>
+      <link>/post/hack-reactor-week-07/</link>
+      <pubDate>Sun, 22 Nov 2015 09:13:41 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-week-07/</guid>
+      <description>Week 7 was the first week of &amp;ldquo;project phase&amp;rdquo; in Hack Reactor. We will go through 6 weeks of group work to become better engineers in team environments.
+Greenfield The term greenfield comes from the engineering world, to refer to a blank slate, a &amp;ldquo;green field&amp;rdquo; ready to be built upon.
+This was my first experience working with a team of four to complete a functioning project. While I greatly enjoyed working in a team environment, there were a few hiccups that we encountered and have learned from along the way.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Week 6</title>
+      <link>/post/hack-reactor-week-06/</link>
+      <pubDate>Sun, 15 Nov 2015 09:13:25 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-week-06/</guid>
+      <description>Week 6 at Hack Reactor is when curriculum starts to shift from small &amp;ldquo;sprints&amp;rdquo; to the larger project phase. For the first time at Hack Reactor, we were given a React.js sprint! After the React.js sprint we had two days to create our MVP projects. At the end of the week, we had the dreaded hiring assessment.
+React.js This was probably one of my favorite sprints thus far. Using React to manage state, we created a jukebox application that leverages the SoundCloud API.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Week 5</title>
+      <link>/post/hack-reactor-week-05/</link>
+      <pubDate>Sun, 08 Nov 2015 09:12:55 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-week-05/</guid>
+      <description>With another week completed, week 5 has been extremely interesting. The topics this week included authentication, and deployment, along with introductions to MongoDB and Angular.
+Authentication As we all know, security is a pivotal part of development. Authentication is the act of verifying that your user is actually who they say they are. This verification normally includes a username and password. When that password is passed to the server we then return a token for return authentication requests.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Week 4</title>
+      <link>/post/hack-reactor-week-04/</link>
+      <pubDate>Sun, 01 Nov 2015 08:58:08 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-week-04/</guid>
+      <description>In Hack Reactor, week 4 is a pivotal time where the training wheels start to come off. Much of the sprints until week 4 have had for the most part very structured tests that held your hand through most of the sprints. Week 4 starts to look quite different!
+During week 4 we took a walk through server-side or what is also called back-end concepts. We specifically focused on using node, server side concepts such as the client-server model, and databases.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Week 3</title>
+      <link>/post/hack-reactor-week-03/</link>
+      <pubDate>Sun, 25 Oct 2015 08:50:09 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-week-03/</guid>
+      <description>Welcome to week 3! This has been an awesome week for discovering web application architecture. We began the week creating a chat application that focused on front end development. During the middle of the week we began to take a deeper dive into web application architecture using backbone.js. And the final sprint of the week included another dive into backbone.js but using CoffeeScript to write the application, rather than Javascript.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Week 2</title>
+      <link>/post/hack-reactor-week-02/</link>
+      <pubDate>Sun, 18 Oct 2015 10:03:28 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-week-02/</guid>
+      <description>Week 2 is over already, what a great time it has been! I was able to settle in this week and make progress on some awesome projects.
+Inheritance Patterns The beginning of week 2 focused on JavaScript inheritance patterns. We discussed the pros and cons of functional classes, functional-shared classes, prototypal classes, and psuedoclassical classes.
+nQueens If you don&amp;rsquo;t know about this problem, check it out! It&amp;rsquo;s an especially fun logic puzzle, where you have to test for a given amount of queens, on an (n x n) chessboard, how many solutions can you find?</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Week 1</title>
+      <link>/post/hack-reactor-week-01/</link>
+      <pubDate>Sun, 11 Oct 2015 09:37:44 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-week-01/</guid>
+      <description>This is it! The first week at Hack Reactor, and what an awesome experience it has been.
+We started the first day with an introduction to the program, touched on both our expectations and the expectations of Hack Reactor, and did a review &amp;ldquo;sprint&amp;rdquo; on recursion.
+Sprints are short projects often worked on with a pair, this is at the core of Hack Reactor&amp;rsquo;s teaching style and philosophy.
+Recursion Recursion is a technique for solving problems where a function makes calls to itself.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Week 0</title>
+      <link>/post/hack-reactor-week-00/</link>
+      <pubDate>Mon, 05 Oct 2015 09:19:42 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-week-00/</guid>
+      <description>It&amp;rsquo;s finally that time! After completing the pre-course work, I start my journey with Hack Reactor today.
+I plan to write on a weekly basis about the new topics covered, and what was focused on during my time here at Hack Reactor.
+During the pre-course we focused on gaining a firm understanding of web development technologies such as HTML, CSS, and jQuery.
+Programming concepts such as scope, execution contexts, objects, and recursion were discussed in great length.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Remote Prep Week 4</title>
+      <link>/post/hack-reactor-remote-prep-week-4/</link>
+      <pubDate>Mon, 10 Aug 2015 07:48:39 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-remote-prep-week-4/</guid>
+      <description>Just like that, the four week course is at an end. I have really enjoyed the opportunity to learn such a large amount of material in such a short time.
+This has definitely been a great learning experience for me. If you are considering going to Hack Reactor, then this course will really show you what you&amp;rsquo;re getting in to. Also, if you are wondering if you can learn in the Hack Reactor Remote online class, the answer is yes!</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Remote Prep Week 3</title>
+      <link>/post/hack-reactor-remote-prep-week-3/</link>
+      <pubDate>Sun, 02 Aug 2015 07:43:11 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-remote-prep-week-3/</guid>
+      <description>I cannot believe we have already completed 3 weeks of class! I have learned a considerable amount along the way. Here are some of the topics that were covered this week.
+Functions Now we are getting into the good stuff. Functions are one of the most critical tools for any good JavaScript programmer. We discussed creating functions, invoking functions, and storing functions as variables.
+Events Event handlers are specific types of functions that are invoked when the user interacts with the website.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Remote Prep Week 2</title>
+      <link>/post/hack-reactor-remote-prep-week-2/</link>
+      <pubDate>Sat, 25 Jul 2015 09:42:11 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-remote-prep-week-2/</guid>
+      <description>Another week completed already! With the end of week 2 brings the close to the first half of the class. At the end of each class, the instructors give a survey to determine if you feel &amp;lsquo;behind pace,&amp;rsquo; &amp;lsquo;on pace,&amp;rsquo; or &amp;lsquo;ahead of pace.&amp;rsquo; While I still feel I am in the &amp;lsquo;ahead of pace&amp;rsquo; category, I have been learning quite a bit!
+Introduction to JavaScript One of the cool things about Hack Reactor is that, no matter the complexity of the material, they always find a way to challenge you with the exercises.</description>
+    </item>
+    
+    <item>
+      <title>Hack Reactor Remote Prep Week 1</title>
+      <link>/post/hack-reactor-remote-prep-week-1/</link>
+      <pubDate>Sun, 19 Jul 2015 20:42:20 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/hack-reactor-remote-prep-week-1/</guid>
+      <description>I am fortunate enough to be in the first Hack Reactor Remote Prep class! The course is 4 weeks long, meeting 5 days a week for 3 hours.
+The class time has flown by, and I have been able to work and get to know a majority of my classmates! I had wondered what it would be like to pair program remotely with people, and I honestly think it is just as good as if the person was sitting beside you.</description>
+    </item>
+    
+    <item>
+      <title>Since My Last Hack Reactor Interview</title>
+      <link>/post/since-my-last-hack-reactor-interview/</link>
+      <pubDate>Sun, 28 Jun 2015 09:57:47 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/since-my-last-hack-reactor-interview/</guid>
+      <description>There are a multitude of things I have done since my last Hack Reactor interview to better prepare for the next interview.
+I have continued to study the beginning of Eloquent JavaScript (especially rereading Chapter 5).
+I changed over my Wordpress blog to Ghost! This has allowed me to learn a lot of server side linux and briefly touch on handlebars.js.
+I helped my wife set up her own Ghost blog!</description>
+    </item>
+    
+  </channel>
+</rss>

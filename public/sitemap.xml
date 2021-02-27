@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/tags/about/</loc>
+    <lastmod>2017-03-14T09:26:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2017-03-14T09:26:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2017-03-14T09:26:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2017-03-14T09:26:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cli/</loc>
+    <lastmod>2016-10-18T08:19:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/cli-testing-golang/</loc>
+    <lastmod>2016-10-18T08:19:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/go/</loc>
+    <lastmod>2016-10-18T08:19:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2016-10-18T08:19:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/testing/</loc>
+    <lastmod>2016-10-18T08:19:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bestrida/</loc>
+    <lastmod>2016-09-04T09:45:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/bestrida/</loc>
+    <lastmod>2016-09-04T09:45:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/react-native/</loc>
+    <lastmod>2016-09-04T09:45:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/strava/</loc>
+    <lastmod>2016-09-04T09:45:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+</urlset>

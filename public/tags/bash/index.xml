@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bash on Kunal Sumbly</title>
+    <link>/tags/bash/</link>
+    <description>Recent content in Bash on Kunal Sumbly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kunal.sumbly@gmail.com (Kunal Sumbly)</managingEditor>
+    <webMaster>kunal.sumbly@gmail.com (Kunal Sumbly)</webMaster>
+    <copyright>(c) 2021 Kunal Sumbly.</copyright>
+    <lastBuildDate>Mon, 01 Aug 2016 09:33:10 -0400</lastBuildDate><atom:link href="/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switching From Bash to ZSH</title>
+      <link>/post/switching-from-bash-to-zsh/</link>
+      <pubDate>Mon, 01 Aug 2016 09:33:10 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/switching-from-bash-to-zsh/</guid>
+      <description>I recently switched from BASH (Bourne Again SHell) to ZSH after hearing about z shell&amp;rsquo;s many benefits.
+The main benefits for me were better autocompletion, and file globbing, and better autocorrection. I spent quite a few weekends doing research on whether to switch or not, and finally I bit the bullet.
+Installing ZSH with Homebrew While this isn&amp;rsquo;t necessary, it&amp;rsquo;s incredibly straightforward to do. The default version of ZSH shipped with OSX is 5.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Strava on Kunal Sumbly</title>
+    <link>/tags/strava/</link>
+    <description>Recent content in Strava on Kunal Sumbly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kunal.sumbly@gmail.com (Kunal Sumbly)</managingEditor>
+    <webMaster>kunal.sumbly@gmail.com (Kunal Sumbly)</webMaster>
+    <copyright>(c) 2021 Kunal Sumbly.</copyright>
+    <lastBuildDate>Sun, 04 Sep 2016 09:45:50 -0400</lastBuildDate><atom:link href="/tags/strava/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bestrida</title>
+      <link>/post/bestrida/</link>
+      <pubDate>Sun, 04 Sep 2016 09:45:50 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/bestrida/</guid>
+      <description>I recently published Bestrida to the iOS app store for my submission to the 2016 Strava Developer Challenge. Here is a brief overview of the application. Strava.com is a popular and widely used website and mobile app that over one million cyclists and runners use to track their activity via GPS. Whenever you go for a run or ride your bike, Strava will track and store your activity and provide you with useful statistics.</description>
+    </item>
+    
+  </channel>
+</rss>

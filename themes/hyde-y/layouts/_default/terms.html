@@ -1,0 +1,20 @@
+{{ partial "head" . }}
+<article id="main-content" class="container main_content terms">
+  <header class="container">
+    {{ partial "bloc/content/h1-title" . }}
+  </header>
+  <ul class="container content">
+  {{ $data := .Data }}
+  {{ range $key,$value := .Data.Terms.ByCount }}
+    <li>
+      <a href="{{ $data.Plural | relURL }}/{{ $value.Name | urlize }}">
+        {{ $value.Name }}
+      </a>
+      <strong>
+        {{ $value.Count }}
+      </strong>
+    </li>
+  {{ end }}
+  </ul>
+</article>
+{{ partial "foot" . }}

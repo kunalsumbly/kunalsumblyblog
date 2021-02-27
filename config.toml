@@ -1,0 +1,40 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Kunal Sumbly"
+copyright = "(c) 2021 Kunal Sumbly."
+theme = "hyde-y"
+
+# Enable Disqus integration
+disqusShortname = "kunalsumbly"
+
+[Author]
+  name = "Kunal Sumbly"
+  email = "kunal.sumbly@gmail.com"
+
+[params]
+  brand = "Kunal Sumbly"
+  topline = "Software Engineer"
+
+  # Sidebar position
+  # false, true, "left", "right"
+  sidebar = "left"
+
+  # Text for the top menu link, which goes the root URL for the site.
+  # Default (if omitted) is "Home".
+  home = "Home"
+
+  # Select a syntax highight.
+  # Check the static/css/highlight directory for options.
+  highlight = "default"
+
+  # Google Analytics.
+  googleAnalytics = "UA-37904415-1"
+
+  # Sidebar social links.
+  github = "kunalsumbly"
+  twitter = "one_pacifist"
+  linkedin = "kunal-sumbly-0022b92a"
+
+  # Sidebar RSS link: will only show up if there is a RSS feed
+  # associated with the current page
+  rss = true

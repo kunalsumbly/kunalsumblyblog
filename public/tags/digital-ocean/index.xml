@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digital Ocean on Kunal Sumbly</title>
+    <link>/tags/digital-ocean/</link>
+    <description>Recent content in Digital Ocean on Kunal Sumbly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kunal.sumbly@gmail.com (Kunal Sumbly)</managingEditor>
+    <webMaster>kunal.sumbly@gmail.com (Kunal Sumbly)</webMaster>
+    <copyright>(c) 2021 Kunal Sumbly.</copyright>
+    <lastBuildDate>Thu, 15 Oct 2015 09:48:08 -0400</lastBuildDate><atom:link href="/tags/digital-ocean/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a Static Page on a Digital Ocean Droplet</title>
+      <link>/post/create-a-static-page-on-a-digital-ocean-droplet/</link>
+      <pubDate>Thu, 15 Oct 2015 09:48:08 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/create-a-static-page-on-a-digital-ocean-droplet/</guid>
+      <description>I currently use Digital Ocean to host my ghost blog. This has a been a very fun adventure, allowing me to learn the &amp;ldquo;ins and outs&amp;rdquo; of linux server administration.
+What if we want to add a new static page? Using a ghost blog is very easy and simple, but what if we want to add our projects to our site?
+This takes a little bit of work.
+After we copy our files onto our server, we want open the Ghost nginx file using: nano /etc/nginx/sites-enabled/ghost</description>
+    </item>
+    
+  </channel>
+</rss>

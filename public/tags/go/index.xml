@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on Kunal Sumbly</title>
+    <link>/tags/go/</link>
+    <description>Recent content in Go on Kunal Sumbly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kunal.sumbly@gmail.com (Kunal Sumbly)</managingEditor>
+    <webMaster>kunal.sumbly@gmail.com (Kunal Sumbly)</webMaster>
+    <copyright>(c) 2021 Kunal Sumbly.</copyright>
+    <lastBuildDate>Tue, 18 Oct 2016 08:19:39 -0400</lastBuildDate><atom:link href="/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CLI Testing in Go</title>
+      <link>/post/cli-testing-golang/</link>
+      <pubDate>Tue, 18 Oct 2016 08:19:39 -0400</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/cli-testing-golang/</guid>
+      <description>Writing unit tests for Go (Golang) CLIs A majority of my background has been developing web applications. I&amp;rsquo;ve recently changed teams at work to a team that is primarily focused on building a CLI.
+Writing tests in Go is a relatively simple process, especially coming from JavaScript where you need multiple modules, and lots of code before you even begin writing tests.
+The testing package has most everything you need for writing unit tests.</description>
+    </item>
+    
+  </channel>
+</rss>
