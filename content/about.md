@@ -1,6 +1,6 @@
 +++
 author = "author"
-date = "2017-03-14T09:26:55-04:00"
+date = "27-02-2021T09:26:55-04:00"
 description = "About Kunal Sumbly"
 keywords = ["Kunal", "Sumbly", "About"]
 tags = ["About"]
