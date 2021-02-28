@@ -11,7 +11,7 @@ topics = ["About"]
 
 Hi, I'm Kunal Sumbly.
 
-<img src="/static/img/kunal.png" width="250" height="250" />
+![kunal](/img/kunal.png)
 
 
 Senior Software Engineer with 11+ years in banking and financial services industry. Experienced in implementing Enterprise Software Products.

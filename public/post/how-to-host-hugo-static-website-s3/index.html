@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Host Personal Website/Blog on AWS S3 using Hugo  &middot; Kunal Sumbly</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Static web site hosting is very common on S3 buckets. This tutorial walks through how to setup a simple blog on AWS S3 and using CloudFront for content caching" />
+
+<meta name="keywords" content="Hugo, AWS S3, Static website, CloudFront, ">
+
+
+<meta property="og:title" content="Host Personal Website/Blog on AWS S3 using Hugo  &middot; Kunal Sumbly ">
+<meta property="og:site_name" content="Kunal Sumbly"/>
+<meta property="og:url" content="/post/how-to-host-hugo-static-website-s3/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Static web site hosting is very common on S3 buckets. This tutorial walks through how to setup a simple blog on AWS S3 and using CloudFront for content caching"/>
+<meta property="og:article:published_time" content="2021-02-28T22:29:18&#43;11:00" />
+<meta property="og:article:modified_time" content="2021-02-28T22:29:18&#43;11:00" />
+
+  
+    
+<meta property="og:article:tag" content="Hugo">
+    
+<meta property="og:article:tag" content="AWS S3">
+    
+<meta property="og:article:tag" content="Static website">
+    
+<meta property="og:article:tag" content="CloudFront">
+    
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@one_pacifist" />
+<meta name="twitter:creator" content="@one_pacifist" />
+<meta name="twitter:title" content="Host Personal Website/Blog on AWS S3 using Hugo" />
+<meta name="twitter:description" content="Static web site hosting is very common on S3 buckets. This tutorial walks through how to setup a simple blog on AWS S3 and using CloudFront for content caching" />
+<meta name="twitter:url" content="/post/how-to-host-hugo-static-website-s3/" />
+<meta name="twitter:domain" content="/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Host Personal Website\/Blog on AWS S3 using Hugo",
+    "author": {
+      "@type": "Person",
+      "name": "Kunal Sumbly"
+    },
+    "datePublished": "2021-02-28",
+    "description": "Static web site hosting is very common on S3 buckets. This tutorial walks through how to setup a simple blog on AWS S3 and using CloudFront for content caching",
+    "wordCount":  355 
+  }
+</script>
+
+
+
+<link rel="canonical" href="/post/how-to-host-hugo-static-website-s3/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link href="/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.80.0" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/highlight/default.css">
+
+  
+  
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-37904415-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="/">
+  Kunal Sumbly
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Software Engineer
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+<a class="homelink" href="/">Home</a>
+
+
+  
+<a href="/about/">About</a>
+
+<a href="/post/" title="Show list of posts">Posts</a>
+
+<a href="/tags/" title="Show list of tags">Tags</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" rel="me" aria-label="Email" href="mailto:kunal.sumbly@gmail.com">
+  <span class="fa fa-envelope-square"></span></a>
+
+
+
+<a id="contact-link-github" class="contact_link" rel="me" aria-label="Github" href="https://github.com/kunalsumbly">
+  <span class="fa fa-github-square"></span></a>
+
+
+
+
+ 
+<a id="contact-link-linkedin" class="contact_link" rel="me" aria-label="LinkedIn" href="https://www.linkedin.com/in/kunal-sumbly-0022b92a">
+  <span class="fa fa-linkedin-square"></span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" rel="me" aria-label="Twitter" href="https://twitter.com/one_pacifist">
+  <span class="fa fa-twitter-square"></span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>Host Personal Website/Blog on AWS S3 using Hugo
+</h1>
+
+  <div class="metas">
+<time datetime="2021-02-28">28 Feb, 2021</time>
+
+
+  
+  &middot; Read in about 2 min
+  &middot; (355 Words)
+  <br>
+  
+<a class="label" href="/tags/hugo">Hugo</a>
+
+<a class="label" href="/tags/aws-s3">AWS S3</a>
+
+<a class="label" href="/tags/cloudfront">CloudFront</a>
+
+<a class="label" href="/tags/route53">Route53</a>
+
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  <h1 id="problem-statement">Problem statement</h1>
+<p>In this tutorial we will be hosting a static website on AWS S3 bucket. The website domain will be registered on AWS Route53 which in AWS world acts both the Domain registrar and DNS provider. Also we would be using another AWS service called CloudFront that is similar to Akamai and acts as a CDN (Content Delivery Network) which in layman&rsquo;s terms means a blazing fast cache to store static content closer to the user&rsquo;s geographical location.</p>
+<p>A specific usecase of Lambda Edge which gets deployed on Regional Cache locations to append index.html for every request URI that user requests, to help redirect user to the index.html of a sub-directory.</p>
+<h1 id="different-tools-involved">Different Tools involved</h1>
+<ul>
+<li>AWS S3 buckets<br>
+&ndash;&gt;Use S3 to host your static website</li>
+<li>AWS Route 53<br>
+&ndash;&gt; As Domain Registrar (<strong>kunalsumbly.com</strong>) and DNS service (using Alias records to point to my CloudFront distribution)</li>
+<li>CloudFront<br>
+&ndash;&gt; Caching static content close to users thereby enhancing user experience</li>
+<li>AWS CLI<br>
+&ndash;&gt; Because using CLI is fun and lets agree, AWS console can get boring.</li>
+<li>Hugo static website generator<br>
+&ndash;&gt; Saves you a lot of hastle if all you need is a simple static website to host your blog</li>
+<li>Hugo theme<br>
+&ndash;&gt; hyde-y is the theme that we have used in this example, it provides standard left menu style navigation and easy integration with disqus for user comment management.</li>
+</ul>
+<h1 id="s3-bucket-setup">S3 bucket setup</h1>
+<p>Create S3 bucket with the same name as domain (kunalsumbly.com)</p>
+<h1 id="route-53-setup">Route 53 setup</h1>
+<p>First you need to buy a domain in Route 53 which should automatically create a Hosted Zone in Route 53. A hosted zone in AWS is critical for proper DNS resolution.</p>
+<p>A hosted zone will have multiple records (record type A, AAAA , CNAME or Alias). I this case , we would be using Alias records for our root domain .kunalsumbly.com and for sub-domain <a href="http://www.kunalsumbly.com">www.kunalsumbly.com</a> to point to our cloudfront distribution.</p>
+<p>A good tip is to first host the website on S3 and create alias records to point to S3 so that we can test Route53 DNS resolution and if everything works fine, flip the Alias records to point to cloudfront distribution</p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="/post/cli-testing-golang/" title="CLI Testing in Go">
+      Previous
+    </a>
+    
+
+    
+
+  
+
+
+</div>
+
+  
+<div class="container comments">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script>
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://kunalsumbly.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  (c) 2021 Kunal Sumbly.
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//kunalsumbly.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+  </body>
+</html>
+

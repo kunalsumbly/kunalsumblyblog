@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS S3 on Kunal Sumbly</title>
+    <link>/tags/aws-s3/</link>
+    <description>Recent content in AWS S3 on Kunal Sumbly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kunal.sumbly@gmail.com (Kunal Sumbly)</managingEditor>
+    <webMaster>kunal.sumbly@gmail.com (Kunal Sumbly)</webMaster>
+    <copyright>(c) 2021 Kunal Sumbly.</copyright>
+    <lastBuildDate>Sun, 28 Feb 2021 22:29:18 +1100</lastBuildDate><atom:link href="/tags/aws-s3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Host Personal Website/Blog on AWS S3 using Hugo</title>
+      <link>/post/how-to-host-hugo-static-website-s3/</link>
+      <pubDate>Sun, 28 Feb 2021 22:29:18 +1100</pubDate>
+      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
+      <guid>/post/how-to-host-hugo-static-website-s3/</guid>
+      <description>Problem statement In this tutorial we will be hosting a static website on AWS S3 bucket. The website domain will be registered on AWS Route53 which in AWS world acts both the Domain registrar and DNS provider. Also we would be using another AWS service called CloudFront that is similar to Akamai and acts as a CDN (Content Delivery Network) which in layman&amp;rsquo;s terms means a blazing fast cache to store static content closer to the user&amp;rsquo;s geographical location.</description>
+    </item>
+    
+  </channel>
+</rss>

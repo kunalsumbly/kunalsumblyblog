@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/aws-s3/</loc>
+    <lastmod>2021-02-28T22:29:18+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cloudfront/</loc>
+    <lastmod>2021-02-28T22:29:18+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/how-to-host-hugo-static-website-s3/</loc>
+    <lastmod>2021-02-28T22:29:18+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2021-02-28T22:29:18+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-02-28T22:29:18+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-02-28T22:29:18+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/route53/</loc>
+    <lastmod>2021-02-28T22:29:18+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-02-28T22:29:18+11:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/cli/</loc>
     <lastmod>2016-10-18T08:19:39-04:00</lastmod>
   </url>
@@ -14,21 +54,6 @@
   
   <url>
     <loc>/tags/go/</loc>
-    <lastmod>2016-10-18T08:19:39-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2016-10-18T08:19:39-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2016-10-18T08:19:39-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2016-10-18T08:19:39-04:00</lastmod>
   </url>
   
