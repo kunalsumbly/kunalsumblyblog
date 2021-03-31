@@ -61,7 +61,7 @@
     },
     "datePublished": "2021-02-28",
     "description": "Static web site hosting is very common on S3 buckets. This tutorial walks through how to setup a simple blog on AWS S3 and using CloudFront for content caching",
-    "wordCount":  355 
+    "wordCount":  486 
   }
 </script>
 
@@ -128,11 +128,11 @@
 
 
   
-<a href="/about/">About</a>
+<a href="/about">About</a>
 
-<a href="/post/" title="Show list of posts">Posts</a>
+<a href="/post" title="Show list of posts">Posts</a>
 
-<a href="/tags/" title="Show list of tags">Tags</a>
+<a href="/tags" title="Show list of tags">Tags</a>
 
 
 </nav>
@@ -193,8 +193,8 @@
 
 
   
-  &middot; Read in about 2 min
-  &middot; (355 Words)
+  &middot; Read in about 3 min
+  &middot; (486 Words)
   <br>
   
 <a class="label" href="/tags/hugo">Hugo</a>
@@ -213,8 +213,9 @@
 
   <div class="container content">
   <h1 id="problem-statement">Problem statement</h1>
-<p>In this tutorial we will be hosting a static website on AWS S3 bucket. The website domain will be registered on AWS Route53 which in AWS world acts both the Domain registrar and DNS provider. Also we would be using another AWS service called CloudFront that is similar to Akamai and acts as a CDN (Content Delivery Network) which in layman&rsquo;s terms means a blazing fast cache to store static content closer to the user&rsquo;s geographical location.</p>
-<p>A specific usecase of Lambda Edge which gets deployed on Regional Cache locations to append index.html for every request URI that user requests, to help redirect user to the index.html of a sub-directory.</p>
+<p>In this tutorial we will be hosting a static website on AWS S3 bucket. The website domain will be registered on AWS Route53 which in AWS world acts both as a Domain registrar and a DNS provider. Also we would be using another AWS service called CloudFront that is similar to Akamai. CloudFront acts as a CDN (Content Delivery Network) which in layman&rsquo;s terms means a blazing fast cache to store static content closer to the user&rsquo;s geographical location.</p>
+<p>A specific usecase of Lambda Edge in which Node.js code gets deployed on Regional Cache locations closer to users to append index.html for every request URI that user requests, to help redirect user to the index.html of a sub-directory. More on this later, this is actually to circumvent an issue which comes when pointing to cloudFront distribution. CloudFront by default only points to the index.html located at the base of the s3 bucket. It is not able to redirect the request to the index.html of the subfolders within a S3 bucket.</p>
+<p>Why is this a problem? Well our static website consists of multiple sub-directories and each sub-directory has its own index.html that contains the content for the respective sub-directory. So when the user request /kunalsumbly.com/posts/ the CloudFront should actually serve  /kunalsumbly.com/posts/index.html and which is not possible without actually appending /index.html so every user request. This is where Lambda edge comes into picture that actually intercepts each user-request and appends /index.html at the end.</p>
 <h1 id="different-tools-involved">Different Tools involved</h1>
 <ul>
 <li>AWS S3 buckets<br>
@@ -228,13 +229,13 @@
 <li>Hugo static website generator<br>
 &ndash;&gt; Saves you a lot of hastle if all you need is a simple static website to host your blog</li>
 <li>Hugo theme<br>
-&ndash;&gt; hyde-y is the theme that we have used in this example, it provides standard left menu style navigation and easy integration with disqus for user comment management.</li>
+&ndash;&gt; hyde-y is the theme that we have used in this example, it provides standard left menu style navigation and easy integration with <strong>Disqus</strong> for comments management.</li>
 </ul>
 <h1 id="s3-bucket-setup">S3 bucket setup</h1>
 <p>Create S3 bucket with the same name as domain (kunalsumbly.com)</p>
 <h1 id="route-53-setup">Route 53 setup</h1>
 <p>First you need to buy a domain in Route 53 which should automatically create a Hosted Zone in Route 53. A hosted zone in AWS is critical for proper DNS resolution.</p>
-<p>A hosted zone will have multiple records (record type A, AAAA , CNAME or Alias). I this case , we would be using Alias records for our root domain .kunalsumbly.com and for sub-domain <a href="http://www.kunalsumbly.com">www.kunalsumbly.com</a> to point to our cloudfront distribution.</p>
+<p>A hosted zone will have multiple records (record type A, AAAA , CNAME or Alias). In this case , we would be using Alias records for our root domain [<strong>.kunalsumbly.com</strong>] and for sub-domain [<strong>www.kunalsumbly.com</strong>] to point to our cloudfront distribution.</p>
 <p>A good tip is to first host the website on S3 and create alias records to point to S3 so that we can test Route53 DNS resolution and if everything works fine, flip the Alias records to point to cloudfront distribution</p>
 
 </div>
@@ -244,16 +245,6 @@
   <div class="container navigation no-print">
   <h2>Navigation</h2>
   
-  
-
-    
-    <a class="prev" href="/post/cli-testing-golang/" title="CLI Testing in Go">
-      Previous
-    </a>
-    
-
-    
-
   
 
 

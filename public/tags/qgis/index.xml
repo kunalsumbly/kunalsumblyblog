@@ -1,26 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>QGIS on Kunal Sumbly</title>
-    <link>/tags/qgis/</link>
-    <description>Recent content in QGIS on Kunal Sumbly</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <managingEditor>kunal.sumbly@gmail.com (Kunal Sumbly)</managingEditor>
-    <webMaster>kunal.sumbly@gmail.com (Kunal Sumbly)</webMaster>
-    <copyright>(c) 2021 Kunal Sumbly.</copyright>
-    <lastBuildDate>Sat, 22 Aug 2015 10:29:42 -0400</lastBuildDate><atom:link href="/tags/qgis/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Installing PostGIS and QGIS using Homebrew</title>
-      <link>/post/installing-postgis-and-qgis-using-homebrew/</link>
-      <pubDate>Sat, 22 Aug 2015 10:29:42 -0400</pubDate>
-      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
-      <guid>/post/installing-postgis-and-qgis-using-homebrew/</guid>
-      <description>After browsing the web and seeing outdated information for installing GIS software, I wanted to document the steps I took to install all the required software to get up and running using Homebrew:
-Installing Homebrew Be sure to have xcode installed from Apple
-xcode-select --installCopy this code a paste into your terminal to download and install Homebrew:
-ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;Installing PostGIS First, using Homebrew install PostgreSQL:</description>
-    </item>
-    
-  </channel>
-</rss>

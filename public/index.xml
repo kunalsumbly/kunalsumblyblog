@@ -16,27 +16,7 @@
       <pubDate>Sun, 28 Feb 2021 22:29:18 +1100</pubDate>
       <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
       <guid>/post/how-to-host-hugo-static-website-s3/</guid>
-      <description>Problem statement In this tutorial we will be hosting a static website on AWS S3 bucket. The website domain will be registered on AWS Route53 which in AWS world acts both the Domain registrar and DNS provider. Also we would be using another AWS service called CloudFront that is similar to Akamai and acts as a CDN (Content Delivery Network) which in layman&amp;rsquo;s terms means a blazing fast cache to store static content closer to the user&amp;rsquo;s geographical location.</description>
-    </item>
-    
-    <item>
-      <title>CLI Testing in Go</title>
-      <link>/post/cli-testing-golang/</link>
-      <pubDate>Tue, 18 Oct 2016 08:19:39 -0400</pubDate>
-      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
-      <guid>/post/cli-testing-golang/</guid>
-      <description>Writing unit tests for Go (Golang) CLIs A majority of my background has been developing web applications. I&amp;rsquo;ve recently changed teams at work to a team that is primarily focused on building a CLI.
-Writing tests in Go is a relatively simple process, especially coming from JavaScript where you need multiple modules, and lots of code before you even begin writing tests.
-The testing package has most everything you need for writing unit tests.</description>
-    </item>
-    
-    <item>
-      <title>Bestrida</title>
-      <link>/post/bestrida/</link>
-      <pubDate>Sun, 04 Sep 2016 09:45:50 -0400</pubDate>
-      <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
-      <guid>/post/bestrida/</guid>
-      <description>I recently published Bestrida to the iOS app store for my submission to the 2016 Strava Developer Challenge. Here is a brief overview of the application. Strava.com is a popular and widely used website and mobile app that over one million cyclists and runners use to track their activity via GPS. Whenever you go for a run or ride your bike, Strava will track and store your activity and provide you with useful statistics.</description>
+      <description>Problem statement In this tutorial we will be hosting a static website on AWS S3 bucket. The website domain will be registered on AWS Route53 which in AWS world acts both as a Domain registrar and a DNS provider. Also we would be using another AWS service called CloudFront that is similar to Akamai. CloudFront acts as a CDN (Content Delivery Network) which in layman&amp;rsquo;s terms means a blazing fast cache to store static content closer to the user&amp;rsquo;s geographical location.</description>
     </item>
     
     <item>
