@@ -11,10 +11,10 @@ topics = ["About"]
 
 Hi, I'm Kunal Sumbly.
 
-![kunal](/img/kunal.png)
+![kunal](/img/kunal_resize.png)
 
 
-Senior Software Engineer with 11+ years in banking and financial services industry. Experienced in implementing Enterprise Software Products.
+Senior Software Engineer with 13+ years in banking and financial services industry. Experienced in implementing Enterprise Software Products.
 Customer-centric with expertise in customer-facing roles, working closely with clients from the inception of the project, through high-level and detailed design/implementation to launch and post-go-live support.
 
 Passionate about technology, proficient in different technical stacks in the Java Ecosystem, Cloud Computing , AWS and DevOps.
