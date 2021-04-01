@@ -15,7 +15,7 @@ In this tutorial we will be hosting a static website on AWS S3 bucket. The websi
 
 # High Level Architecture
 
-The diagram below has been copied from the AWS website itself. Also this reference architecture is advocated by AWS to protect the web application against DDoS Attacks.
+The diagram below has been copied from the AWS website. Also this reference architecture is advocated by AWS to protect the web application against DDoS Attacks.
 
 ![architecture](/img/Architecture_R53_CDN.png)
 

@@ -61,7 +61,7 @@
     },
     "datePublished": "2021-02-28",
     "description": "Static web site hosting is very common on S3 buckets. This tutorial walks through how to setup a simple blog on AWS S3 and using CloudFront for content caching",
-    "wordCount":  761 
+    "wordCount":  760 
   }
 </script>
 
@@ -194,7 +194,7 @@
 
   
   &middot; Read in about 4 min
-  &middot; (761 Words)
+  &middot; (760 Words)
   <br>
   
 <a class="label" href="/tags/hugo">Hugo</a>
@@ -215,7 +215,7 @@
   <h1 id="problem-statement">Problem statement</h1>
 <p>In this tutorial we will be hosting a static website on AWS S3 bucket. The website domain will be registered on AWS Route53 which in AWS world acts both as a Domain registrar and a DNS provider. Also we would be using another AWS service called CloudFront that is similar to Akamai. CloudFront acts as a CDN (Content Delivery Network) which in layman&rsquo;s terms means a blazing fast cache to store static content closer to the user&rsquo;s geographical location.</p>
 <h1 id="high-level-architecture">High Level Architecture</h1>
-<p>The diagram below has been copied from the AWS website itself. Also this reference architecture is advocated by AWS to protect the web application against DDoS Attacks.</p>
+<p>The diagram below has been copied from the AWS website. Also this reference architecture is advocated by AWS to protect the web application against DDoS Attacks.</p>
 <p><img src="/img/Architecture_R53_CDN.png" alt="architecture"></p>
 <p>In our specific use case, the Step 5 redirect does not happen via S3 and it is actually handled by CloudFront.</p>
 <h1 id="tools-inventory">Tools inventory</h1>
