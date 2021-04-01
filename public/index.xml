@@ -11,7 +11,7 @@
     <copyright>(c) 2021 Kunal Sumbly.</copyright>
     <lastBuildDate>Sun, 28 Feb 2021 22:29:18 +1100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Host Personal Website/Blog on AWS S3 using Hugo</title>
+      <title>Personal Blog on AWS S3 using Hugo</title>
       <link>/post/how-to-host-hugo-static-website-s3/</link>
       <pubDate>Sun, 28 Feb 2021 22:29:18 +1100</pubDate>
       <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
@@ -26,7 +26,7 @@
       <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
       <guid>/about/</guid>
       <description>Hi, I&amp;rsquo;m Kunal Sumbly.
-Senior Software Engineer with 11+ years in banking and financial services industry. Experienced in implementing Enterprise Software Products. Customer-centric with expertise in customer-facing roles, working closely with clients from the inception of the project, through high-level and detailed design/implementation to launch and post-go-live support.
+Senior Software Engineer with 13+ years in banking and financial services industry. Experienced in implementing Enterprise Software Products. Customer-centric with expertise in customer-facing roles, working closely with clients from the inception of the project, through high-level and detailed design/implementation to launch and post-go-live support.
 Passionate about technology, proficient in different technical stacks in the Java Ecosystem, Cloud Computing , AWS and DevOps.
 Follow me on Github and Twitter.</description>
     </item>

@@ -19,6 +19,8 @@ The diagram below has been copied from the AWS website itself. Also this referen
 
 ![architecture](/img/Architecture_R53_CDN.png)
 
+In our specific use case, the Step 5 redirect does not happen via S3 and it actually handled by CloudFront.
+
 # Tools inventory
 
 * **AWS S3 bucket**  
@@ -32,7 +34,7 @@ The diagram below has been copied from the AWS website itself. Also this referen
 * **AWS CLI**   
     Because using CLI is fun and lets agree, AWS console can get boring. 
 * **Hugo static website generator**  
-    Saves you a lot of hastle if all you need is a simple static website to host your blog. Hugo setup instructions are available here https://gohugo.io/getting-started/installing/
+    Saves you a lot of hassle if all you need is a simple static website to host your blog. Hugo setup instructions are available here https://gohugo.io/getting-started/installing/
 * **Hugo theme**  
     hyde-y is the theme that we have used in this example, it provides standard left menu style navigation and easy integration with **Disqus** for user comment management. The theme can be downloaded from here https://github.com/enten/hyde-y
 * **Disqus**  

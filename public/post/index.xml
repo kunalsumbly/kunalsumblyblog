@@ -11,7 +11,7 @@
     <copyright>(c) 2021 Kunal Sumbly.</copyright>
     <lastBuildDate>Sun, 28 Feb 2021 22:29:18 +1100</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Host Personal Website/Blog on AWS S3 using Hugo</title>
+      <title>Personal Blog on AWS S3 using Hugo</title>
       <link>/post/how-to-host-hugo-static-website-s3/</link>
       <pubDate>Sun, 28 Feb 2021 22:29:18 +1100</pubDate>
       <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
