@@ -19,7 +19,7 @@ The diagram below has been copied from the AWS website itself. Also this referen
 
 ![architecture](/img/Architecture_R53_CDN.png)
 
-In our specific use case, the Step 5 redirect does not happen via S3 and it actually handled by CloudFront.
+In our specific use case, the Step 5 redirect does not happen via S3 and it is actually handled by CloudFront.
 
 # Tools inventory
 
