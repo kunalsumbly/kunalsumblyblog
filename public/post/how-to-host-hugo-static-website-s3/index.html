@@ -19,7 +19,7 @@
 
 <meta property="og:title" content="Personal Blog on AWS S3 using Hugo  &middot; Kunal Sumbly ">
 <meta property="og:site_name" content="Kunal Sumbly"/>
-<meta property="og:url" content="/post/how-to-host-hugo-static-website-s3/" />
+<meta property="og:url" content="https://kunalsumbly.com/post/how-to-host-hugo-static-website-s3/" />
 <meta property="og:locale" content="en-us">
 
 
@@ -46,8 +46,8 @@
 <meta name="twitter:creator" content="@one_pacifist" />
 <meta name="twitter:title" content="Personal Blog on AWS S3 using Hugo" />
 <meta name="twitter:description" content="Static web site hosting is very common on S3 buckets. This tutorial walks through how to setup a simple blog on AWS S3 and using CloudFront for content caching" />
-<meta name="twitter:url" content="/post/how-to-host-hugo-static-website-s3/" />
-<meta name="twitter:domain" content="/">
+<meta name="twitter:url" content="https://kunalsumbly.com/post/how-to-host-hugo-static-website-s3/" />
+<meta name="twitter:domain" content="https://kunalsumbly.com/">
   
 
 <script type="application/ld+json">
@@ -61,16 +61,16 @@
     },
     "datePublished": "2021-02-28",
     "description": "Static web site hosting is very common on S3 buckets. This tutorial walks through how to setup a simple blog on AWS S3 and using CloudFront for content caching",
-    "wordCount":  760 
+    "wordCount":  1611 
   }
 </script>
 
 
 
-<link rel="canonical" href="/post/how-to-host-hugo-static-website-s3/" />
+<link rel="canonical" href="https://kunalsumbly.com/post/how-to-host-hugo-static-website-s3/" />
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
-<link href="/favicon.png" rel="icon">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://kunalsumbly.com/touch-icon-144-precomposed.png">
+<link href="https://kunalsumbly.com/favicon.png" rel="icon">
 
 <meta name="generator" content="Hugo 0.80.0" />
 
@@ -103,7 +103,7 @@
     <header id="main-header" class="container main_header">
   <div class="container brand">
   <div class="container title h1-like">
-  <a class="baselink" href="/">
+  <a class="baselink" href="https://kunalsumbly.com/">
   Kunal Sumbly
 
 </a>
@@ -124,15 +124,13 @@
   <nav class="container nav primary no-print">
   
 
-<a class="homelink" href="/">Home</a>
+<a class="homelink" href="https://kunalsumbly.com/">Home</a>
 
 
   
-<a href="/about">About</a>
+<a href="https://kunalsumbly.com/about">About</a>
 
-<a href="/post" title="Show list of posts">Posts</a>
-
-<a href="/tags" title="Show list of tags">Tags</a>
+<a href="https://kunalsumbly.com/tags" title="Show list of tags">Tags</a>
 
 
 </nav>
@@ -193,17 +191,17 @@
 
 
   
-  &middot; Read in about 4 min
-  &middot; (760 Words)
+  &middot; Read in about 8 min
+  &middot; (1611 Words)
   <br>
   
-<a class="label" href="/tags/hugo">Hugo</a>
+<a class="label" href="https://kunalsumbly.com/tags/hugo">Hugo</a>
 
-<a class="label" href="/tags/aws-s3">AWS S3</a>
+<a class="label" href="https://kunalsumbly.com/tags/aws-s3">AWS S3</a>
 
-<a class="label" href="/tags/cloudfront">CloudFront</a>
+<a class="label" href="https://kunalsumbly.com/tags/cloudfront">CloudFront</a>
 
-<a class="label" href="/tags/route53">Route53</a>
+<a class="label" href="https://kunalsumbly.com/tags/route53">Route53</a>
 
 
 
@@ -251,15 +249,136 @@ Disqus is a cool platform to engage with the audience, user comment moderation a
 </li>
 </ul>
 <h1 id="s3-bucket-setup">S3 bucket setup</h1>
-<p>Create S3 bucket with the same name as domain (<strong>kunalsumbly.com</strong>) and enable static website hosting and public access for now. This is quite useful to initial testing and can be turned off later. We don&rsquo;t want anonymous access allowed on the S3 bucket. The bucket and its content are not open to public and only CloudFront has access to the bucket using <strong>Origin Access Identity (OAI)</strong> user. This is configured during setting up CloudFront distribution and setting up S3 bucket as origin and configuring OAI, which is a secure way of accessing bucket contents from CloudFront. More on this in the CloudFront Section.</p>
+<p>Create S3 bucket with the same name as domain (<strong>kunalsumbly.com</strong>) and enable static website hosting and public access for now. This is quite useful for initial testing and should be turned off later. We don&rsquo;t want anonymous access allowed on the S3 bucket. The bucket and its content are not open to public and only CloudFront has access to the bucket using <strong>Origin Access Identity (OAI)</strong> user. This is configured during setting up CloudFront distribution and setting up S3 bucket as origin and configuring OAI, which is a secure way of accessing bucket contents from CloudFront. More on this in the CloudFront Section.</p>
+<p><strong>S3 bucket permission</strong>
+<img src="/img/s3_bucket_permission.png" alt="s3bucketPermission"></p>
+<p><strong>S3 bucket contents</strong>
+<img src="/img/s3_bucket_contents.png" alt="s3bucketContents"></p>
+<h1 id="cloudfront-setup">CloudFront setup</h1>
+<p>CloudFront delivers the content (.html , .css , .js and image files) through a worldwide network of data centers called edge locations. When content is served via CloudFront, a user request is routed to the edge location that provides lowest latency.</p>
+<ul>
+<li>If the edge location already has the content, the user gets the content immediately.</li>
+<li>If the content is not at the edge location, CloudFront fetches the content from the origin defined as a part of CloudFront distribution e.g an S3 bucket, E2 instance running a web server.</li>
+</ul>
+<p>In order to serve the static content from our S3 bucket via CloudFront, we need to create a CloudFront Distribution which will point to our S3 bucket.</p>
+<p><strong>CloudFront Distribution General Settings</strong></p>
+<ul>
+<li>Depending on how much do you want to spend, you can select an appropriate Price Class to distribute your content across the global edge locations. In this example, we are selecting only US, Canada and Europe regions.</li>
+<li>Alternate Domain Names (CNAMEs) provide an alternative name for your CloudFront distribution, which usually has a long boring name and no human wants to use type is long boring URLs (e.g. d111111abcdef8.cloudfront.net). Whatever CNAMEs are provided here, make sure they are also configured correctly in the Route53 Hosted Zone records. For example , <a href="http://www.kunalsumbly.com">www.kunalsumbly.com</a> in Route53 should point to CloudFront distribution via an Alias Record. Please refer to Route53 section for further details.</li>
+<li>Also we are using custom SSL certificate that we generated from Amazon Certificate Manager using the same domain name (<strong>kunalsumbly.com</strong>)</li>
+</ul>
+<p><img src="/img/cloud_front_distribution_general_settings.png" alt="cfnGeneralSettings"></p>
+<p><strong>CloudFront OAI user to access S3 bucket</strong></p>
+<ul>
+<li>
+<p>OAI (Origin Access Identity) user is used by CloudFront to access S3 content. The access to S3 bucket is highly restricted and to serve S3 content, CloudFront needs access to S3 and this access is actually granted by OAI.</p>
+</li>
+<li>
+<p>S3 bucket policy is actually updated and the policy only grants read access (<strong>GetObject</strong>) to the OAI user.</p>
+</li>
+</ul>
+<p><img src="/img/cloud_front_distribution_oai_settings.png" alt="cfnOaiUserSettings"></p>
+<ul>
+<li>S3 bucket is accessed as REST endpoint.</li>
+</ul>
+<p><img src="/img/cloud_front_distribution_content_origin_settings.png" alt="cfnOriginSettings"></p>
+<p><strong>CloudFront Distribution Behavior</strong></p>
+<ul>
+<li>Viewer Protocol Policy is set as Redirect HTTP to HTTPS if we want to serve all content on HTTPS.</li>
+</ul>
+<p><img src="/img/cloud_front_distribution_content_behavior_settings_1.png" alt="cfnOriginBehavior1Settings"></p>
+<ul>
+<li>Lambda Edge Function is associations is done below where we need to configure for a specific CloudFront Event. In this case , we want that all our user requests (<strong>Viewer Request</strong>) to be intercepted by Lambda Edge which is deployed at the edge locations.</li>
+</ul>
+<p><img src="/img/cloud_front_distribution_content_behavior_settings_2.png" alt="cfnOriginBehavior2Settings"></p>
+<ul>
+<li>You can execute Lambda functions when the following CloudFront events occur:
+<ul>
+<li>When CloudFront receives a request from a viewer (<strong>viewer request</strong>)</li>
+<li>Before CloudFront forwards a request to the origin (<strong>origin request</strong>)</li>
+<li>When CloudFront receives a response from the origin (<strong>origin response</strong>)</li>
+<li>Before CloudFront returns the response to the viewer (<strong>viewer response</strong>)</li>
+</ul>
+</li>
+</ul>
+<p><strong>CloudFront Lambda Edge Flow</strong></p>
+<p><img src="/img/cloudfront_lambda_edge_flow.png" alt="cfnLambdaEdgeFlow"></p>
+<p><strong>CloudFront Logs Redirect to S3 Buckets</strong></p>
+<ul>
+<li>We can redirect CloudFront logs to be saved on an S3 bucket for monitoring/audit purposes.</li>
+</ul>
+<p><img src="/img/cloud_front_distribution_logs.png" alt="cfnsLogsSettings"></p>
+<p><strong>CloudFront Logs on S3 Buckets</strong></p>
+<p><img src="/img/cloud_front_distribution_logs_bucket_contents.png" alt="cfnsLogsS3bucketContentSettings"></p>
+<p><strong>CloudFront Logs S3 Buckets LifeCycle configuration</strong></p>
+<ul>
+<li>In the current usecase we are expiring the contents of the CloudFront logs bucket after 7 days using S3 lifecycle rule</li>
+</ul>
+<p><img src="/img/cloud_front_distribution_bucket_lifecycle.png" alt="cfnsLogsBucketLifecycleSettings"></p>
 <h1 id="route-53-setup">Route 53 setup</h1>
 <p>First you need to buy a domain in Route 53 which should automatically create a Hosted Zone in Route 53. A hosted zone in AWS is critical for proper DNS resolution.</p>
+<p><img src="/img/route53HostedZones.png" alt="route53HostedZone"></p>
+<ul>
+<li><strong>Records marked in Red</strong> should not be modified as they as created by Route53.</li>
+<li><strong>Record marked in Blue CNAME</strong> is created by the Amazon Certificate Manager (ACM) to validate the domain (kunalsumbly.com).</li>
+<li><strong>Records marked in Green</strong> are Alias records that point to the Cloudfront distribution.</li>
+</ul>
 <p>A hosted zone will have multiple records (record type A, AAAA , CNAME or Alias). In this case , we would be using Alias records for our root domain [<strong>.kunalsumbly.com</strong>] and for sub-domain [<strong>www.kunalsumbly.com</strong>] to point to our cloudfront distribution.</p>
 <p>A good tip is to first host the website on S3 and create alias records to point to S3 so that we can test Route53 DNS resolution and if everything works fine, flip the Alias records to point to cloudfront distribution.</p>
-<h1 id="cloudfront-setup">CloudFront setup</h1>
 <h1 id="curious-case-of-lambda-edge">Curious case of Lambda Edge</h1>
-<p>A specific usecase of Lambda Edge in which Node.js code gets deployed on Regional Cache locations closer to users to append index.html for every request URI that user requests, to help redirect user to the index.html of a sub-directory. More on this later, this is actually to circumvent an issue which comes when pointing to cloudFront distribution. CloudFront by default only points to the index.html located at the base of the s3 bucket. It is not able to redirect the request to the index.html of the subfolders within a S3 bucket.</p>
-<p>Why is this a problem? Well our static website consists of multiple sub-directories and each sub-directory has its own index.html that contains the content for the respective sub-directory. So when the user request /kunalsumbly.com/posts/ the CloudFront should actually serve  /kunalsumbly.com/posts/index.html and which is not possible without actually appending /index.html so every user request. This is where Lambda edge comes into picture that actually intercepts each user-request and appends /index.html at the end.</p>
+<p>A specific usecase of Lambda Edge in which Node.js code gets deployed on Regional Cache locations closer to users to append index.html for every request URI that user requests, to help redirect user to the index.html of a sub-directory. This is actually to solve the problem when accessing S3 content via CloudFront using OAI. In this case, CloudFront must use the S3 REST endpoint to fetch content from your origin so that the request can be authenticated using the OAI. This presents some challenges in that the REST endpoint does not support redirection to a default index page.</p>
+<p>CloudFront does allow you to specify a default root object (index.html), but it only works on the root of the website (such as <a href="http://www.example.com">http://www.example.com</a> &gt; <a href="http://www.example.com/index.html)">http://www.example.com/index.html)</a>. It does not work on any subdirectory (such as <a href="http://www.example.com/about/)">http://www.example.com/about/)</a>.</p>
+<p>If you were to attempt to request this URL through CloudFront, CloudFront would do a S3 GetObject API call against a key that does not exist.</p>
+<p>To solve this, when the user request /kunalsumbly.com/posts/ the CloudFront should actually serve  /kunalsumbly.com/posts/index.html and which is not possible without actually appending /index.html to every user request. This is where Lambda edge comes into picture which actually intercepts each user-request and appends /index.html at the end.</p>
+<p>The code for Lambda Edge is shown below</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#e6db74">&#39;use strict&#39;</span>;
+<span style="color:#a6e22e">exports</span>.<span style="color:#a6e22e">handler</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>, <span style="color:#a6e22e">callback</span>) =&gt; {
+    
+    <span style="color:#75715e">// Extract the request from the CloudFront event that is sent to Lambda@Edge 
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">request</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">Records</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">cf</span>.<span style="color:#a6e22e">request</span>;
+
+    <span style="color:#75715e">// Extract the URI from the request
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">olduri</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">request</span>.<span style="color:#a6e22e">uri</span>;
+
+    <span style="color:#75715e">// Match any &#39;/&#39; that occurs at the end of a URI. Replace it with a default index
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">newuri</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">olduri</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">/\/$/</span>, <span style="color:#e6db74">&#39;\/index.html&#39;</span>);
+    
+    <span style="color:#75715e">// Log the URI as received by CloudFront and the new URI to be used to fetch from origin
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Old URI: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">olduri</span>);
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;New URI: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">newuri</span>);
+    
+    <span style="color:#75715e">// Replace the received URI with the URI that includes the index page
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">request</span>.<span style="color:#a6e22e">uri</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">newuri</span>;
+</code></pre></div><h1 id="some-useful-cli-commands">Some useful CLI commands</h1>
+<ul>
+<li>Use the following command to create a new site/blog</li>
+</ul>
+<pre><code class="language-cli" data-lang="cli">hugo new site myblog
+</code></pre><ul>
+<li>Following command to add new content</li>
+</ul>
+<pre><code class="language-cli" data-lang="cli">hugo new posts/my-first-post.md
+</code></pre><ul>
+<li>This command builds Hugo website and the final static content is dumped under public/ folder of hugo</li>
+</ul>
+<pre><code class="language-cli" data-lang="cli">hugo
+</code></pre><ul>
+<li>To serve the content on localhost:port</li>
+</ul>
+<pre><code class="language-cli" data-lang="cli">hugo serve
+</code></pre><ul>
+<li>Sync S3 bucket with local hugo public/ content. The command has to be executed from within public/ . This command can only be run once aws cli is configured.</li>
+</ul>
+<pre><code class="language-cli" data-lang="cli">aws s3 sync . s3://&lt;bucketname&gt; --force --delete
+</code></pre><ul>
+<li>CloudFront cache invalidation. This command can only be run once aws cli is configured.</li>
+</ul>
+<pre><code class="language-cli" data-lang="cli">aws cloudfront create-invalidation --distribution-id &lt;cloudFrontDistributionID&gt; --paths &quot;/*&quot;
+</code></pre><h1 id="next-steps">Next steps</h1>
+<ul>
+<li>Use some kind automation to sync the S3 bucket whenever the blog content changes. Maybe when the new content is pushed to the git repo.</li>
+<li>Invalidate CloudFront Cache when some new addition/modification happens to the blog via git commit.</li>
+</ul>
 
 </div>
 

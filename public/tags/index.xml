@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Kunal Sumbly</title>
-    <link>/tags/</link>
+    <link>https://kunalsumbly.com/tags/</link>
     <description>Recent content in Tags on Kunal Sumbly</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>kunal.sumbly@gmail.com (Kunal Sumbly)</managingEditor>
     <webMaster>kunal.sumbly@gmail.com (Kunal Sumbly)</webMaster>
     <copyright>(c) 2021 Kunal Sumbly.</copyright>
-    <lastBuildDate>Sun, 28 Feb 2021 22:29:18 +1100</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Feb 2021 22:29:18 +1100</lastBuildDate><atom:link href="https://kunalsumbly.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS S3</title>
-      <link>/tags/aws-s3/</link>
+      <link>https://kunalsumbly.com/tags/aws-s3/</link>
       <pubDate>Sun, 28 Feb 2021 22:29:18 +1100</pubDate>
       <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
-      <guid>/tags/aws-s3/</guid>
+      <guid>https://kunalsumbly.com/tags/aws-s3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CloudFront</title>
-      <link>/tags/cloudfront/</link>
+      <link>https://kunalsumbly.com/tags/cloudfront/</link>
       <pubDate>Sun, 28 Feb 2021 22:29:18 +1100</pubDate>
       <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
-      <guid>/tags/cloudfront/</guid>
+      <guid>https://kunalsumbly.com/tags/cloudfront/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>/tags/hugo/</link>
+      <link>https://kunalsumbly.com/tags/hugo/</link>
       <pubDate>Sun, 28 Feb 2021 22:29:18 +1100</pubDate>
       <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
-      <guid>/tags/hugo/</guid>
+      <guid>https://kunalsumbly.com/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Route53</title>
-      <link>/tags/route53/</link>
+      <link>https://kunalsumbly.com/tags/route53/</link>
       <pubDate>Sun, 28 Feb 2021 22:29:18 +1100</pubDate>
       <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
-      <guid>/tags/route53/</guid>
+      <guid>https://kunalsumbly.com/tags/route53/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>/tags/about/</link>
+      <link>https://kunalsumbly.com/tags/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
-      <guid>/tags/about/</guid>
+      <guid>https://kunalsumbly.com/tags/about/</guid>
       <description></description>
     </item>
     
