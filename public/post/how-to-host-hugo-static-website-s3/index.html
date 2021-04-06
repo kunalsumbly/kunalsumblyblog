@@ -61,7 +61,7 @@
     },
     "datePublished": "2021-02-28",
     "description": "Static web site hosting is very common on S3 buckets. This tutorial walks through how to setup a simple blog on AWS S3 and using CloudFront for content caching",
-    "wordCount":  1713 
+    "wordCount":  1726 
   }
 </script>
 
@@ -192,7 +192,7 @@
 
   
   &middot; Read in about 9 min
-  &middot; (1713 Words)
+  &middot; (1726 Words)
   <br>
   
 <a class="label" href="https://kunalsumbly.com/tags/hugo">Hugo</a>
@@ -319,7 +319,7 @@ Disqus is a cool platform to engage with the audience, user comment moderation a
 <p>First you need to buy a domain in Route 53 which should automatically create a Hosted Zone in Route 53. A hosted zone in AWS is critical for proper DNS resolution.</p>
 <p><img src="/img/route53HostedZones.png" alt="route53HostedZone"></p>
 <ul>
-<li><strong>Records marked in Red</strong> should not be modified as they as created by Route53.</li>
+<li><strong>Records marked in Red</strong> should not be modified as they are created by Route53.</li>
 <li><strong>Record marked in Blue CNAME</strong> is created by the Amazon Certificate Manager (ACM) to validate the domain (kunalsumbly.com).</li>
 <li><strong>Records marked in Green</strong> are Alias records that point to the Cloudfront distribution.</li>
 </ul>
@@ -374,7 +374,7 @@ Disqus is a cool platform to engage with the audience, user comment moderation a
 <li>CloudFront cache invalidation. This command can only be run once aws cli is configured.</li>
 </ul>
 <pre><code class="language-cli" data-lang="cli">aws cloudfront create-invalidation --distribution-id &lt;cloudFrontDistributionID&gt; --paths &quot;/*&quot;
-</code></pre><h1 id="learning-outcomes">Learning outcomes</h1>
+</code></pre><h1 id="challenges-encountered">Challenges encountered</h1>
 <ul>
 <li>Issues while deploying code to Lambda@Edge</li>
 </ul>
@@ -395,9 +395,10 @@ Disqus is a cool platform to engage with the audience, user comment moderation a
 </ul>
 <h1 id="next-steps">Next steps</h1>
 <ul>
-<li>Use some kind automation to sync the S3 bucket whenever the blog content changes. Maybe when the new content is pushed to the git repo.</li>
+<li>Use some kind of automation (CI-CD) to sync the S3 bucket whenever the blog content changes. Maybe when the new content is pushed to the git repo.</li>
 <li>Invalidate CloudFront Cache when some new addition/modification happens to the blog via git commit.</li>
 </ul>
+<p>Hopefully will address these in the next blog. Stay tuned !!!</p>
 <h1 id="references">References</h1>
 <p><a href="https://aws.amazon.com/blogs/compute/implementing-default-directory-indexes-in-amazon-s3-backed-amazon-cloudfront-origins-using-lambdaedge/">https://aws.amazon.com/blogs/compute/implementing-default-directory-indexes-in-amazon-s3-backed-amazon-cloudfront-origins-using-lambdaedge/</a></p>
 

@@ -129,7 +129,7 @@ First you need to buy a domain in Route 53 which should automatically create a H
 
 ![route53HostedZone](/img/route53HostedZones.png)
 
-* **Records marked in Red** should not be modified as they as created by Route53.
+* **Records marked in Red** should not be modified as they are created by Route53.
 * **Record marked in Blue CNAME** is created by the Amazon Certificate Manager (ACM) to validate the domain (kunalsumbly.com).
 * **Records marked in Green** are Alias records that point to the Cloudfront distribution.
 
@@ -207,7 +207,7 @@ aws s3 sync . s3://<bucketname> --force --delete
 ```cli
 aws cloudfront create-invalidation --distribution-id <cloudFrontDistributionID> --paths "/*"
 ```
-# Learning outcomes
+# Challenges encountered
 
 * Issues while deploying code to Lambda@Edge
 
@@ -229,8 +229,10 @@ We need to modify the IAM Policy to fix the above error, as shown below
 https://stackoverflow.com/questions/46503108/lambdaedge-not-logging-on-cloudfront-request
 
 # Next steps
-* Use some kind automation to sync the S3 bucket whenever the blog content changes. Maybe when the new content is pushed to the git repo. 
+* Use some kind of automation (CI-CD) to sync the S3 bucket whenever the blog content changes. Maybe when the new content is pushed to the git repo. 
 * Invalidate CloudFront Cache when some new addition/modification happens to the blog via git commit. 
+
+Hopefully will address these in the next blog. Stay tuned !!! 
 
 # References
 https://aws.amazon.com/blogs/compute/implementing-default-directory-indexes-in-amazon-s3-backed-amazon-cloudfront-origins-using-lambdaedge/
