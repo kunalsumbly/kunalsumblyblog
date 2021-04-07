@@ -16,7 +16,7 @@
       <pubDate>Sun, 28 Feb 2021 22:29:18 +1100</pubDate>
       <author>kunal.sumbly@gmail.com (Kunal Sumbly)</author>
       <guid>https://kunalsumbly.com/post/how-to-host-hugo-static-website-s3/</guid>
-      <description>Problem statement In this tutorial we will be hosting a static website on AWS S3 bucket. The website domain will be registered on AWS Route53 which in AWS world acts both as a Domain registrar and a DNS provider. Also we would be using another AWS service called CloudFront that is similar to Akamai. CloudFront acts as a CDN (Content Delivery Network) which in layman&amp;rsquo;s terms means a blazing fast cache to store static content closer to the user&amp;rsquo;s geographical location.</description>
+      <description>Problem statement In this tutorial we will be hosting a static website on AWS S3 bucket. The website domain will be registered on AWS Route53 which in AWS world acts both as a Domain registrar and a DNS provider. Also we would be using another AWS service called CloudFront that is similar to Akamai. CloudFront acts as a CDN (Content Delivery Network) which in layman&amp;rsquo;s terms means a blazing fast cache delivering content globally with low latency.</description>
     </item>
     
   </channel>
