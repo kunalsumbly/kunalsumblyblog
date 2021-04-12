@@ -28,7 +28,7 @@ disqusShortname = "kunalsumbly"
   highlight = "default"
 
   # Google Analytics.
-  #googleAnalytics = "UA-37904415-1"
+  #googleAnalytics = ""
 
   # Sidebar social links.
   github = "kunalsumbly"

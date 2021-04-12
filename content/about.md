@@ -28,4 +28,4 @@ Write me an [email](mailto:kunalsumbly@gmail.com).
 Built with [Hugo](http://gohugo.io/).
 <br>Hosted on [Amazon Web Services](https://aws.amazon.com/).
 <br>Static content hosted on S3, domain registered with Route 53, and content delivered with CloudFront CDN. 
-<br>Inspired from [fork](https://github.com/jrzimmerman/justinzimmerman.net). 
+<br>Inspired by https://twitter.com/justzimmerman [fork](https://github.com/jrzimmerman/justinzimmerman.net). 
