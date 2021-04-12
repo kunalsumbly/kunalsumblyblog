@@ -9,3 +9,5 @@ Please find the steps to build and deploy that you've probably forgotten about b
   * Switch to public folder `cd public`
   * S3 Upload  `aws s3 sync . s3://kunalsumbly.com --force --delete`
   * (optional) create a cache invalidation on Cloudfront
+
+Inspired from https://github.com/jrzimmerman/justinzimmerman.net
