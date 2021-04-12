@@ -28,7 +28,7 @@ disqusShortname = "kunalsumbly"
   highlight = "default"
 
   # Google Analytics.
-  googleAnalytics = "UA-37904415-1"
+  #googleAnalytics = "UA-37904415-1"
 
   # Sidebar social links.
   github = "kunalsumbly"
@@ -37,4 +37,4 @@ disqusShortname = "kunalsumbly"
 
   # Sidebar RSS link: will only show up if there is a RSS feed
   # associated with the current page
-  rss = true
+  rss = false
